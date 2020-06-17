@@ -1,0 +1,27 @@
+<div>
+	<div class="col">
+		<h2>Welcome to the Employee peramance</h2>
+	</div>
+	<div class="col">
+		<h3>Add a new Employee</h3>
+	</div>
+	<form ng-submit="submit()">
+	<table class="table">
+		<tr>
+			<td>Employee Id</td>
+			<td><input ng-model="empid" type="text"></input></td>
+		</tr>
+		<tr>
+			<td>Employee Name</td>
+			<td><input ng-model="name" type"text"></input></td>
+		</tr>
+		<tr>
+			<td>Date of Joining</td>
+			<td><input ng-model="jdate" type="date"></input></td>
+		</tr>
+	</table>
+	<div class="col">
+		<button class="btn btn-success" type="submit" style="background : green;text-align:center">Add</button>
+	</div>
+	</form>
+</div>

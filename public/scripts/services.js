@@ -1,7 +1,7 @@
 
 'use strict';
 // Should I use Ctrl syntax instead of Controller?
-// Do I need to do better error handling?
+// Do I need to do better error handnjsjsjsjdjdjdjljdjdjdhing?
 
 angular.module('app')
 
@@ -9,7 +9,10 @@ angular.module('app')
 .service('dataService', ['$http', function($http){
 
   var baseUrl = "http://localhost:5000";
-
+  this.getdata = function(callback){
+  	$http.post(baseUrl + "/getdata")
+  	.then(callback);
+  }
   // Gets all of the recipes
   this.getAllRecipes = function(callback){
     $http.get(baseUrl + "/api/recipes")

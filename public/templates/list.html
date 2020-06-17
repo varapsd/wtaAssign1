@@ -1,0 +1,17 @@
+<div>
+	<table>
+		<thead>
+			<td>#</td>
+			<td>id</td>
+			<td>Name</td>
+			<td></td>
+		</thead>
+		<tr ng-repeat="emp in emplist">
+			<td>{{$index}}</td>
+			<td>{{emp.empId}}</td>
+			<td>{{emp.empName}}</td>
+			<td><a ng-href="#!/form/{{emp.empId}}">Add a Review</a></td>
+			<td></td>
+		</tr>
+	</table>
+</div>

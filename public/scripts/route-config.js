@@ -10,16 +10,24 @@
   function config($routeProvider) {
     $routeProvider
       .when('/', {
-        controller: 'RecipesController',
+        controller: 'home',
         controllerAs: 'vm',
-        templateUrl: 'templates/recipes.html'
+        templateUrl: 'templates/home.html'
       })
-      .when('/edit/:id', {
-        controller: 'RecipeDetailController',
+      .when('/add',{
+      	controller: 'add',
+      	templateUrl : 'templates/add.html'
+      })
+      .when('/list', {
+        controller: 'list',
         controllerAs: 'vm',
-        templateUrl: 'templates/recipe-detail.html'
+        templateUrl: 'templates/list.html'
       })
-      .when('/add', {
+      .when('/form/:id',{
+      	controller : 'form',
+      	templateUrl : 'templates/form.html'
+      })
+      .when('/add1', {
         controller: 'RecipeDetailController',
         controllerAs: 'vm',
         templateUrl: 'templates/recipe-detail.html'

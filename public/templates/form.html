@@ -1,0 +1,67 @@
+<div>
+	<div class="col" align="center">
+		<h3> Review now </h3>
+	</div>
+	<div align="center">
+		<table class="table" style="text-align : center">
+			<tr>
+				<td>Employee id</td>
+				<td><h3>{{ empId }}</h3></td>
+			</tr>
+			<tr>
+				<td>Employee Name</td>
+				<td><h3>{{ empName }}</h3></td>
+			</tr>
+		</table>
+	<div>
+	<form ng-submit="submit1()">
+	<div>
+		<table class="table stripped">
+		<thead>
+			<td></td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+		</thead>
+			<tr>
+				<td>performance</td>
+				<td><input type="radio" ng-model="p1" value="1" name="p1"></input></td>
+				<td><input type="radio" ng-model="p1" value="2" name="p1"></input></td>
+				<td><input type="radio" ng-model="p1" value="3" name="p1"></input></td>
+				<td><input type="radio" ng-model="p1" value="4" name="p1"></input></td>
+				<td><input type="radio" ng-model="p1" value="5" name="p1"></input></td>
+			</tr>
+			<tr>
+				<td>posses skills</td>
+				<td><input type="radio" ng-model="p2" value="1" name="p2"></input></td>
+				<td><input type="radio" ng-model="p2" value="2" name="p2"></input></td>
+				<td><input type="radio" ng-model="p2" value="3" name="p2"></input></td>
+				<td><input type="radio" ng-model="p2" value="4" name="p2"></input></td>
+				<td><input type="radio" ng-model="p2" value="5" name="p2"></input></td>
+			</tr>
+			<tr>
+				<td>work in organised manner</td>
+				<td><input type="radio" ng-model="p3" value="1" name="p3"></input></td>
+				<td><input type="radio" ng-model="p3" value="2" name="p3"></input></td>
+				<td><input type="radio" ng-model="p3" value="3" name="p3"></input></td>
+				<td><input type="radio" ng-model="p3" value="4" name="p3"></input></td>
+				<td><input type="radio" ng-model="p3" value="5" name="p3"></input></td>
+			</tr>
+			<tr>
+				<td>Can identify problem</td>
+				<td><input type="radio" ng-model="p4" value="1" name="p4"></input></td>
+				<td><input type="radio" ng-model="p4" value="2" name="p4"></input></td>
+				<td><input type="radio" ng-model="p4" value="3" name="p4"></input></td>
+				<td><input type="radio" ng-model="p4" value="4" name="p4"></input></td>
+				<td><input type="radio" ng-model="p4" value="5" name="p4"></input></td>
+			</tr>
+			</table>
+	</div>
+	<div>
+		<textarea placeholder="comments" ng-model="comment"></textarea>
+		<button type="submit" style="background : green">submit</button>
+	</div>
+	</form>
+</div>
